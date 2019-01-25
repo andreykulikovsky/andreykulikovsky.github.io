@@ -97,6 +97,7 @@ p {
 	background: transparent none repeat scroll 0 0;
 	border-color: #dddddd #dddddd black;
 	border-radius: 50%;
+	position: absolute;
 	border-style: solid;
 	border-width: 2px;
 	height: 40px;
