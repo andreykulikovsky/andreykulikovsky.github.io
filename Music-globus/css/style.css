@@ -144,6 +144,10 @@ p {
 	z-index: 999;
 }
 
+.row {
+	margin-left: 0;
+}
+
 /* --------------------------
 :: 2.0 Header Area CSS
 -------------------------- */
@@ -207,6 +211,7 @@ p {
 	background: #000000;
 	transition: .8s;
 }
+
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
 @media (max-width: 550px) {
@@ -223,6 +228,8 @@ p {
 }
 
 #nav-icon {
+	margin-left: -30px;
+	width: 100%;
 	z-index: 2;
 	cursor: pointer;	
 	height: 1.5rem;
@@ -330,7 +337,7 @@ p {
 }
 
 ul.menu {
-	width: 50%;
+	width: 100%;
 	list-style: none;
 	margin-top: 1px;
 	padding: 0;
@@ -547,12 +554,16 @@ ul.menu li {
 }
 
 .wellcome_col {
-	background: url(../img/bg.jpg) no-repeat;
+	background:url(../img/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	width: 100%;
+	min-width: 100%;
 	position: relative;
 	height: auto;
 	min-height: 100% !important;
-	background-color: rgba(225,225,225, 0.5);
 }
 
 .button {
@@ -578,22 +589,17 @@ ul.menu li {
 	left: 804px;
 }
 
-.wellcome_heading {
-	height: 500px;
-}
-
 .text-container {
 	width: 100%;
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	color: white;
 	font-family: 'Cutive Mono', monospace;
-	/*letter-spacing: 1px;*/
-	font-size: 3rem;
-	font-weight: 1000;
+	font-size: 2rem;
+	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
 }
@@ -681,11 +687,11 @@ span {
 	position: relative;
 	height: auto;
 	min-height: 100% !important;
-	width: 100%;
 	background: url(../img/catalog_bg.jpg);
 }
 
 .header {
+	margin-left: 0;
 	padding-top: 10%;
 	padding-bottom: 5%;
 }
@@ -901,6 +907,7 @@ span {
 }
 
 .social-icon li {
+	width: 50px;
 	margin-left: 3%;
 	display: inline-block;
 	vertical-align:top;
